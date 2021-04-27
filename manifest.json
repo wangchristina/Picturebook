@@ -1,0 +1,23 @@
+{
+    "name": "Inclusion Challenge Hackathon",
+    "version": "1.0",
+    "description": "smol child lrn lang",
+    "manifest_version": 2, 
+    "content_scripts": [
+        {
+            "matches": ["*://meet.google.com/*"],
+            "js": ["content.js"],
+            "css": ["content.css"]
+        }
+    ],
+    "browser_action":  {
+        "default_popup": "popup.html",
+        "default_title": "EasyL",
+        "default_action": "test.png"
+    },
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": ["storage"]
+    
+}

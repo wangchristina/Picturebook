@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+ <meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ <meta charset="utf-8">
+<head>
+  <title>PictureBook</title>
+ <link href="main.css" rel="stylesheet" type="text/css"/>
+ <script src="jquery.min.js"></script>
+ <script src="popup.js"></script>
+</head>
+<body>
+
+  <div id="front">
+    <p id="closeFront">x</p>
+  <img src="settings.png" alt="setting" width="47px" id="settingFront">
+  <div class="reviewsec">
+    <div id="reviewTime">Review
+      <img src="book.png" alt="" height="35px" id="bookReview">
+    </div>
+  </div>
+  <div id="title3">Number of cards: <span id="demo" style="color: #CBB478;"></span></div>
+
+  <div class="slidecontainer">
+    <img src="f1.png" alt="" height="25px" id="f1">
+    <img src="f2.png" alt="" height="35px" id="f2">
+  <input type="range" min="1" max="30" value="15" class="slider" id="myRange">
+  <p id="least" class="slideNum">1</p>
+  <p id="most" class="slideNum">30</p>
+
+</div>
+
+
+
+  </div>
+
+
+  <div id="flashcards" style="display:none;">
+    <div id="title">Let's review together</div>
+    <img src="settings.png" alt="setting" width="47px" id="settingFlash">
+    <p id="closeFlash">x</p>
+    <div id="cardArea">
+      <div id="flip-card-inner">
+      </div>
+    </div>
+    <div id="countArea"></div>
+    <div class="buttons">
+      <div class="float_c" id="leftButtonArea"></div>
+      <div class="float_c" id="rightButtonArea"></div>
+    </div>
+  </div>
+
+
+
+  <div id="settingsPage" style="display:none;">
+      <p id="closeSetting">x</p>
+
+    <div id="title2">Language</div>
+  <div class="langs">
+    <div id="lang1">Española</div>
+    <div id="lang2"><span>中&#8288;文</span></div>
+  </div>
+  </div>
+
+
+
+</body>
+</html>

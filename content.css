@@ -1,0 +1,51 @@
+.TBMuR {
+    /* display: none; */
+}
+
+#captionContainer{
+    padding: 0;
+}
+
+.textDiv{
+    font-size: 35px;
+    color: white;
+    display: inline-block;
+}
+
+.imgDiv{
+    display:inline-block;
+    margin-top: 10px;
+}
+
+#captions{
+    margin-top: 0rem;
+    margin-left: 3rem;
+    width: fit-content;
+    margin-right: 3rem;
+}
+#captionBackground{
+    width: 100%;
+    background-color: #121212;
+    height: 100%;
+    position: absolute;
+    z-index: 1000;
+    overflow-x: auto;
+}
+
+
+.image{
+    width: 85%;
+}
+
+.phrase{
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.imageContainer{
+    text-align: center;
+    max-height: 140px;
+}
