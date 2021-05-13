@@ -16,7 +16,7 @@ var wordList = []
 var imgURLs = []
 
 
-//import {queryWord} from "function.js"
+import {queryWord} from "function.js"
 var firebaseConfig = {
     piKey: "AIzaSyA-RKdzhAMJxpwWdP1NHDwCez94Qgth7ac",
     authDomain: "picturebook-eff08.firebaseapp.com",
