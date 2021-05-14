@@ -105,6 +105,11 @@ async function returnImgUrl(url) {
     return await imgUrl
 }
 
+async function getImage(caption) {
+    const response = await fetch(`https://picturebook-eff08-default-rtdb.firebaseio.com/images/-MZTSNJQCan0KNiU9GhM/status.json`);
+    return response.json();
+}
+
 async function handleCaption(caption){
     var captions = document.querySelector("#captions");
 
@@ -126,7 +131,8 @@ async function handleCaption(caption){
 
 
     if (partOfSpeech == true){
-        var imgURL = await returnImgUrl(imageAPI + caption + "&image_type=photo")
+        // var imgURL = await returnImgUrl(imageAPI + caption + "&image_type=photo")
+        var imgURL = await getImage(caption);
 
         imgDiv = document.createElement('div')
         imgDiv.classList.add("imgDiv")

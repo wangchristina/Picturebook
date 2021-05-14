@@ -34,7 +34,8 @@
 
 
 .image{
-    width: 85%;
+    height: 100px;
+    width: auto;
 }
 
 .phrase{
