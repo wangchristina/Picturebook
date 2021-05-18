@@ -14,6 +14,25 @@ var dictionaryAPI = "https://api.dictionaryapi.dev/api/v2/entries/en/"
 var imageAPI = "https://pixabay.com/api/?key=18855007-d05abfa1edf07b804cd453ed1&q="
 var wordList = []
 var imgURLs = []
+
+
+import {queryWord} from "function.js"
+var firebaseConfig = {
+    piKey: "AIzaSyA-RKdzhAMJxpwWdP1NHDwCez94Qgth7ac",
+    authDomain: "picturebook-eff08.firebaseapp.com",
+    databaseURL: "https://picturebook-eff08-default-rtdb.firebaseio.com",
+    projectId: "picturebook-eff08",
+    storageBucket: "picturebook-eff08.appspot.com",
+    messagingSenderId: "95929020875",
+    appId: "1:95929020875:web:6fd11cd0c29005a915864e",
+    measurementId: "G-4B2DK27XCV"
+  };
+
+
+//Initialize Firebase;
+firebase.initializeApp(firebaseConfig);
+
+queryWord(" ");
 // chrome.runtime.onConnect.addListener(function(port) {
 //     console.log("connected to: " + port.name)
 // });
