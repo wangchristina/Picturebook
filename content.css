@@ -1,51 +1,86 @@
 .TBMuR {
-    /* display: none; */
+  /* display: none; */
 }
 
-#captionContainer{
-    padding: 0;
+#captionContainer {
+  padding: 0;
 }
 
-.textDiv{
-    font-size: 35px;
-    color: white;
-    display: inline-block;
+.textDiv {
+  font-size: 35px;
+  color: white;
+  display: inline-block;
 }
 
-.imgDiv{
-    display:inline-block;
-    margin-top: 10px;
+.imgDiv {
+  display: inline-block;
+  margin-top: 10px;
 }
 
-#captions{
-    margin-top: 0rem;
-    margin-left: 3rem;
-    width: fit-content;
-    margin-right: 3rem;
+#captions {
+  margin-top: 0rem;
+  margin-left: 3rem;
+  width: fit-content;
+  margin-right: 3rem;
 }
-#captionBackground{
-    width: 100%;
-    background-color: #121212;
-    height: 100%;
-    position: absolute;
-    z-index: 1000;
-    overflow-x: auto;
-}
-
-
-.image{
-    width: 85%;
+#captionBackground {
+  width: 100%;
+  background-color: #121212;
+  height: 100%;
+  position: absolute;
+  z-index: 1000;
+  overflow-x: auto;
 }
 
-.phrase{
-    font-size: 35px;
-    color: white;
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 0;
+.image {
+  width: 85%;
 }
 
-.imageContainer{
-    text-align: center;
-    max-height: 140px;
+.phrase {
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.imageContainer {
+  text-align: center;
+  max-height: 140px;
+  border-radius: 8px;
+}
+
+.captionsBg {
+  background-color: azure;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: grey;
+  margin-left: 11px;
+  margin-right: 11px;
+  height: 150px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+img {
+  border-radius: 5px 5px 0 0;
 }
